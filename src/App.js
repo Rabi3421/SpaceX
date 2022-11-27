@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Banner from "./Component/Banner";
+// import Home from "./Component/Home";
 
 function App() {
   return (
     <div className="App">
-      hello world
+      <h1 className="text-3xl font-bold underline">Space X</h1>
+      <Banner />
     </div>
   );
 }
