@@ -4,20 +4,20 @@ import Card from "./Card";
 
 function ShowData() {
   const [data, setData] = useState([]);
-  console.log(data);
-  useEffect(() => {
-    axios
-      .get("https://api.spacexdata.com/v3/capsules")
-      .then((res) => setData(res.data));
-  }, []);
+  // console.log(data);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://api.spacexdata.com/v3/capsules")
+  //     .then((res) => setData(res.data));
+  // }, []);
   return (
     <div className="grid grid-cols-2 gap-1" style={{width:"4000px"}}>
-      {data &&
+      {/* {data &&
         data.map((e) => (
           <div>
             <Card key={e.capsule_serial} e={e} />
           </div>
-        ))}
+        ))} */}
     </div>
   );
 }

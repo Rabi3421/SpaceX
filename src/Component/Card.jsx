@@ -3,8 +3,8 @@ import React from "react";
 function Card({e}) {
   console.log(e);
   return (
-    <div className="flex flex-wrap -m-4">
-      <div className="p-4 sm:w-1/2 lg:w-1/3">
+    <div className="flex flex-wrap">
+      <div className="p-4 sm:w-1/2 lg:w-1/1">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img
             className="lg:h-72 md:h-48 w-full object-cover object-center"
