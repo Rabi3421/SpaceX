@@ -1,16 +1,16 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Banner from "./Component/Banner";
-import Card from "./Component/Card";
-import Search from "./Component/Search";
-// import Home from "./Component/Home";
+import Home from "./Pages/Home";
+
+import Login from "./Pages/Login";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Space X</h1>
-      <Banner />
-      <Search />
-      <Card/>
+      <Routes>
+        <Route path="/" element={<Login/>} />
+        <Route path="/home" element={<Home/>} />
+      </Routes>
     </div>
   );
 }
